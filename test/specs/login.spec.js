@@ -1,9 +1,9 @@
-// const homeScreen = require('../screens/home.screen');
+const homeScreen = require('../screens/home.screen');
 
-// describe('Access Admin Panel', () => {
-//   it('should login with valid credentials', async () => {
-//     await homeScreen.goToLogin();
-//   });
+describe('Access Admin Panel', () => {
+    it('should login with valid credentials', async () => {
+        await homeScreen.goToLogin();
+    });
 
-// });
+});
 

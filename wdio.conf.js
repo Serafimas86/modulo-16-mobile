@@ -11,9 +11,11 @@ exports.config = {
     capabilities: [{
         "platformName": "Android",
         "platformVersion": "13.0",
-        "deviceName": "emulator-5554",
+        "deviceName": "ebac-qe",
         "automationName": "UiAutomator2",
         "app": join(process.cwd(), './app/android/Android-NativeDemoApp-0.4.0.apk'),
-        "appWaitActivity": 'com.wdiodemoapp.MainActivity'
+        "appPackage": "com.wdiodemoapp",
+        "appWaitActivity": 'com.wdiodemoapp.MainActivity',
+        "appWaitActivity": "com.wdiodemoapp.SpashActivitty"
     }]
 }
