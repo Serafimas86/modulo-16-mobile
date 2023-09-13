@@ -1,9 +1,5 @@
 class homeScreen {
 
-    get enterFormsAddress() {
-        return $('~Forms')
-    }
-
     async goToForms() {
         await $('~Forms').click()
     }
@@ -11,7 +7,6 @@ class homeScreen {
     async goToForms() {
         await this.enterFormsAddress.click()
     }
-
     async goToLogin() {
         await $('~Login').click()
     }
