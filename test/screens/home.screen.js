@@ -4,9 +4,6 @@ class homeScreen {
         await $('~Forms').click()
     }
 
-    async goToForms() {
-        await this.enterFormsAddress.click()
-    }
     async goToLogin() {
         await $('~Login').click()
     }

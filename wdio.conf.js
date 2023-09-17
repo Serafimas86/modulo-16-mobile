@@ -8,13 +8,14 @@ exports.config = {
     ],
     framework: 'mocha',
     capabilities: [{
-        "platformName": "Android",
-        "platformVersion": "13.0",
-        "deviceName": "samsung SM-A525M",
-        "automationName": "UiAutomator2",
-        "app": join(process.cwd(), './app/android/Android-NativeDemoApp-0.4.0.apk'),
-        "appPackage": "com.wdiodemoapp",
-        "appWaitActivity": 'com.wdiodemoapp.MainActivity',
-        "appWaitActivity": "com.wdiodemoapp.SpashActivitty"
+        capabilities: [{
+            "appium:platformName": "Android",
+            "appium:platformVersion": "13.0",
+            "appium:deviceName": "samsung SM-A525M",
+            "appium:automationName": "uiautomator2",
+            "appium:app": join(process.cwd(), './app/android/Android-NativeDemoApp-0.4.0.apk'),
+            "appium:appPackage": "com.wdiodemoapp",
+            "appium:appWaitActivity": 'MainActivity',
+        }]
     }]
 }
